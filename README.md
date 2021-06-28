@@ -36,9 +36,11 @@ The model had an accuracy of 72.6% and a loss of 57.0%, and thus I was unable to
 3.	What steps did you take to try and increase model performance?
 
 To optimize model performance, I first identified any columns with a high number of unique values. The “APPLICATION_TYPE”, “CLASSIFICATION”, and “ASK_AMT” columns contained more than 10 unique values so I determined the number of data points for each unique value and created a density plot for each of the value counts. According to the density plot for the “APPLICATION_TYPE” value counts, the most common unique values had more than 500 instances within the dataset and thus any application type that appeared fewer than 500 times in the dataset were put into the bucket “Other”. 
+
 ![application_type_plot.png]( https://github.com/kcharb7/Neural_Network_Charity_Analysis/blob/main/Images/application_type_plot.png)
 
 Similarly, the density plot for the “CLASSIFICATION” value counts showed that the most common unique values had more than 1000 instances within the dataset and thus any classification that appeared fewer than 1000 times in the dataset were put into the bucket “other”.
+
 ![classification_plot.png]( https://github.com/kcharb7/Neural_Network_Charity_Analysis/blob/main/Images/classification_plot.png)
 
 The “ASK_AMT” column included over 8,747 unique values and so I calculated and plotted the value counts to determine the potential for binning. 
@@ -46,6 +48,7 @@ The “ASK_AMT” column included over 8,747 unique values and so I calculated a
 ![ask_amt_count.png]( https://github.com/kcharb7/Neural_Network_Charity_Analysis/blob/main/Images/ask_amt_count.png)
 
 ![ask_amt_plot.png]( https://github.com/kcharb7/Neural_Network_Charity_Analysis/blob/main/Images/ask_amt_plot.png)
+
 The “ASK_AMT” value counts ranged from the ask amount of $5000 with the highest value count at 25,398 to the ask amount of $6,948,863 with a value count of 1. Due to vast difference in asking amounts and value counts, I removed the “ASK_AMT” column from the DataFrame.
 
 ![model2_loss_accuracy.png]( https://github.com/kcharb7/Neural_Network_Charity_Analysis/blob/main/Images/model2_loss_accuracy.png)
