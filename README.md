@@ -2,17 +2,17 @@
 ## Overview
 ### *Purpose*
 Alphabet Soup is a non-profit foundation dedicated to helping organizations that protect the environment, improve people’s well-being, and unify the world, and has raised over $10 billion dollars in the last 20 years. This money has been used to invest in life-saving technologies and organize reforestation groups around the world. Beks, a Data Scientist and Programmer for Alphabet Soup, is responsible for analyzing the impact of each donation and examining potential recipients to ensure the company’s money is being used effectively. The President of Alphabet Soup has asked Beks to determine which organizations are worth donating to and which are too high of risk by creating a mathematical data-driven solution. Beks has a CSV containing over 34,000 organizations that Alphabet Soup has provided funding to and has decided to use this dataset to design and train a deep learning neural network. The following variable(s) were included in the dataset:
-•	EIN and NAME—Identification columns
-•	APPLICATION_TYPE—Alphabet Soup application type
-•	AFFILIATION—Affiliated sector of industry
-•	CLASSIFICATION—Government organization classification
-•	USE_CASE—Use case for funding
-•	ORGANIZATION—Organization type
-•	STATUS—Active status
-•	INCOME_AMT—Income classification
-•	SPECIAL_CONSIDERATIONS—Special consideration for application
-•	ASK_AMT—Funding amount requested
-•	IS_SUCCESSFUL—Was the money used effectively
+- EIN and NAME—Identification columns
+- APPLICATION_TYPE—Alphabet Soup application type
+- AFFILIATION—Affiliated sector of industry
+- CLASSIFICATION—Government organization classification
+- USE_CASE—Use case for funding
+- ORGANIZATION—Organization type
+- STATUS—Active status
+- INCOME_AMT—Income classification
+- SPECIAL_CONSIDERATIONS—Special consideration for application
+- ASK_AMT—Funding amount requested
+- IS_SUCCESSFUL—Was the money used effectively
 
 ## Results
 ### *Data Preprocessing*
