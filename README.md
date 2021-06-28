@@ -22,7 +22,7 @@ The “IS_SUCCESSFUL” variable was the target of the model as it identified wh
 The “APPLICATION_TYPE”, “AFFILIATION”, “CLASSIFICATION”, “USE_CASE”, “ORGANIZATION”, “STATUS”, “INCOME_AMT”, “SPECIAL_CONSIDERATIONS”, and “ASK_AMT” variables appear to be the features for the model.
 3.	What variable(s) were considered neither targets nor features, and should be removed from the input data?
 The “EIN” and “NAME” variables were identified to be neither targets nor features and were dropped from the application_df DataFrame. 
-### *Compiling, Training, and Evaluating the Model
+### *Compiling, Training, and Evaluating the Model*
 1.	How many neurons, layers, and activation functions did you select for your neural network model, and why?
 
 I created a neural network model by assigning the number of input features to the length of the X_train_scaled data, set the nodes of the first layer to 80, and set the nodes of the second layer to 30. For the first and second hidden layer, I set the activation parameter to the ReLU activation function to identify and train on nonlinear relationships in the dataset, while the activation parameter for the output layer was set as the sigmoid activation function to produce a probability output. 
